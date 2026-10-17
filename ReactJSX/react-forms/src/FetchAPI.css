@@ -1,0 +1,16 @@
+.joke {
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.jokeSetup {
+    /* background-color: orange; */
+    color: orange;
+}
+
+.jokePunchline {
+    /* background-color: red; */
+    color: red;
+}

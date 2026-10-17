@@ -1,0 +1,62 @@
+body{
+    background-color:rgb(222, 216, 208);
+}
+h1{
+    color: maroon;
+    font-weight: bold;
+}
+
+div{
+    background-color: antiquewhite;
+    margin-top: 2rem;
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+div:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.244);   
+    
+}
+
+#uName{
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#btn,textarea{
+    font-size: 15px; 
+}
+
+#btn{
+    margin-top: 1rem;
+}
+
+#inputName{
+    height: 30px;
+    width: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+#uName:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+#edit{
+    color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form .del{
+    margin-left: 1rem;
+}
+
+#userDesc{
+    width: 15rem;
+}
+

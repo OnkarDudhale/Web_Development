@@ -1,0 +1,24 @@
+button a{
+    text-decoration: none;
+    color: black;
+}
+td a{
+    text-decoration: none;
+}
+td a:hover{
+    text-decoration: underline;
+}
+.userOperation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.userOperation button{
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.userOperation button:hover{
+    border: 1.5px solid black;
+    cursor: pointer;
+    opacity: 0.5;
+}

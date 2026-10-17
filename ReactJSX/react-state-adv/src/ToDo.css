@@ -1,0 +1,27 @@
+input {
+    height: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.task {
+    margin-top: 1rem;
+    list-style-type: none;
+}
+
+button {
+    font-weight: 100;
+    padding: 7px;
+    border: 1px rgb(89, 89, 89) solid;
+}
+
+.taskBadge {
+    background-color: orange;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+
+.done {
+    text-decoration: line-through;
+}

@@ -1,0 +1,22 @@
+.load{
+    height: 200px;
+    width: 200px;
+    border: 20px rgb(239, 238, 237) solid;
+    /* text-decoration: transparent; */
+    border-right: 20px orange solid;
+    border-radius: 50%;
+    /* transition: 1s ease-in 0.2s; */
+    animation: loader 1s ease infinite ;
+}
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);        
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+    /* to{
+        transform: rotate(360deg);
+    } */
+}

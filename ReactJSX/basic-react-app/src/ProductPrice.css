@@ -1,0 +1,25 @@
+.price{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(191, 255, 0);
+    color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: 2rem;
+    align-items: center;
+}
+.oldPrice{
+    text-decoration: line-through;
+}
+
+.newPrice{
+    font-weight: bold;
+}
+.price:hover{
+    height: 4rem;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}

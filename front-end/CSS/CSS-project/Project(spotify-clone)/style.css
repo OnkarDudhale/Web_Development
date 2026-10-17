@@ -1,0 +1,609 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main {
+    height: 100vh;
+    padding-left: 0.5rem;
+}
+
+.block{
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    height: 20rem;
+    border: 2px white solid;
+    position: absolute;
+    z-index:1 ;
+    background-color: #121212;
+}
+.none{
+    display: none;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+.close{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+.top {
+    height: 60px;
+    width: 98.5%;
+    background-color: black;
+    display: flex;
+    padding: 0.2rem;
+    align-items: center;
+    
+}
+
+.top .logo {
+    font-size: 2.1rem;
+    cursor: pointer;
+
+    margin-left: 1rem;
+}
+
+.top .home i {
+    font-size: 1.2rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.90rem;
+    height: 2.90rem;
+    border-radius: 50%;
+    background-color: #232222;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.top .home {
+    margin-left: 1.5rem;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    height: 0.8rem;
+    width: 21.2rem;
+    background-color: #232222;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-left: 0.5rem;
+}
+
+.searchbar i {
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+.searchbar .browse img {
+    opacity: 0.6;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.searchbar input {
+    width: 20rem;
+    height: 1.5rem;
+    background-color: #232222;
+    margin: 0 1rem 0 1rem;
+    border: none;
+    border-right: 1px white solid;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 14.5rem;
+   
+    margin-left: 0.5rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.right {
+    width: 25rem;
+    height: 1.8rem;
+    display: flex;
+    border-left: 1.5px solid white;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+}
+
+.install {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 6rem;
+    margin-left: 1.5rem;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.right .sign-up {
+    opacity: 0.6;
+}
+
+.right .log-in {
+    width: 10rem;
+}
+
+.right .log-in button {
+    height: 3rem;
+    width: 6rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* actions */
+.searchbar:hover {
+    border: 1px white solid;
+}
+
+.browse img:hover {
+    opacity: 1;
+}
+
+i:hover ,button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.install:hover {
+    opacity: 1;
+}
+
+.links a:hover {
+    opacity: 1;
+}
+
+.sign-up:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/* main sidebar*/
+.main-body {
+    display: flex;
+    height: 88vh;
+    
+}
+
+.sidebar {
+
+    width: 420px;
+    background-color: #121212;
+    border-radius: 1rem;
+    
+}
+
+.nav-lib {
+    display: flex;
+    padding-left: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    
+    height: 4rem;
+}
+
+.lib {
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+}
+
+.nav-lib img {
+    width: 20px;
+}
+
+.nav-lib a {
+    text-decoration: none;
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.nav-lib .nav-option i {
+    margin-right: 1.2rem;
+    opacity: 0.6;
+}
+
+/* action */
+.nav-lib .lib:hover,
+.nav-option i:hover {
+    opacity: 1;
+}
+
+.lib-start {
+    height: 10.5rem;
+    margin-top: 0.6rem;
+    transition: 1s ease-in;
+    position: relative;
+
+    overflow-y: hidden;
+    scrollbar-gutter: stable;
+}
+
+.lib-start:hover {
+    overflow-y: overlay;
+}
+
+.lib-start::-webkit-scrollbar {
+    width: 15px;
+    background: transparent;
+    z-index: 1;
+}
+
+.lib-start::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.498);
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+
+.lib-playlist {
+    width: 22.7rem;
+    margin-right: 0.5rem;
+    background-color: #232222;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.5rem 0.5rem;
+    padding: 0.3rem 1.25rem;
+}
+
+
+
+
+.gap {
+    margin-top: 1.5rem;
+}
+
+.para-1 {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.para-2 {
+    font-size: 0.85rem;
+}
+
+.lib-playlist .badge {
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    width: fit-content;
+    margin-top: 0.5rem;
+}
+
+.lib-end {
+    position: sticky;
+    bottom: 0;
+    height: 12.9rem;
+    background-color: rgb(20, 20, 20);
+    padding-left: 1.5rem;
+   
+}
+
+.lib-end .e-info {
+
+    font-size: 0.7rem;
+    padding-top: 1rem;
+
+    line-height: 1rem;
+}
+
+.lib-end .e-info p {
+    opacity: 0.6;
+}
+
+.lib-end .e-info a {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.btn-lang {
+    border: 1px rgba(255, 255, 255, 0.632) solid;
+    color: white;
+    background-color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-lang span {
+    margin-left: 0.5rem;
+}
+
+
+/* main main-content */
+.main-content {
+    flex: 1;
+    background-color: #121212;
+    border-radius: 1rem;
+    overflow: auto;
+    height: auto;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+    position: relative;
+    overflow-y: hidden;
+    scrollbar-gutter: stable;
+}
+
+.main-content:hover {
+    overflow-y: overlay;
+}
+
+.main-content::-webkit-scrollbar {
+    width: 15px;
+    background: transparent;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+
+    background-color: rgba(255, 255, 255, 0.498);
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+
+.top-main {
+    padding: 1.5rem 0;
+}
+
+.main-card {
+    height: 20rem;
+
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.title-name a {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.show-all {
+    color: white;
+    text-decoration: none;
+    opacity: 0.6;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.cards {
+    height: 18rem;
+    display: flex;
+}
+
+.card {
+    height: 15.5rem;
+
+    width: 15rem;
+    margin: 0 0.2rem;
+}
+
+.card-start {
+    height: 11rem;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+.card-start img {
+   
+    height: 11rem;
+    border-radius: 0.5rem;
+}
+
+.card-start .artist {
+    border-radius: 50%;
+}
+
+.card-end {
+    line-height: 1.4rem;
+    padding-left: 0.5rem;
+}
+
+.card-end .name {
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.card-end .role {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.card-end a {
+    color: white;
+    text-decoration: none;
+}
+
+.size {
+    height: 17rem;
+}
+
+
+.card:hover {
+    background-color: #232222;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.footer {
+
+    height: 15rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer h2 {
+    font-size: 0.9rem;
+}
+
+.info-data {
+    display: flex;
+    justify-content: space-between;
+    width: 36rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info a {
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 7rem;
+
+    margin-top: 1rem;
+}
+
+.data:hover,
+.card-end .role a:hover {
+    text-decoration: underline;
+}
+
+.social-app {
+    font-size: 1.2rem;
+}
+
+.copyright {
+    height: 15rem;
+    border-top: 1px rgba(255, 255, 255, 0.313) solid;
+}
+
+.copyright p {
+    font-size: 0.8rem;
+    color: white;
+    opacity: 0.6;
+    padding: 2rem;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 5rem;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.playbar {
+    width: 15rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.playbar img {
+    width: 15px;
+    height: 15px;
+    opacity: 0.3;
+}
+
+.playbar #pause {
+    width: 30px;
+    height: 30px;
+    opacity: 0.3;
+}
+
+.player .track {
+    width: 500px;
+    height: 4px;
+    background-color: rgba(129, 129, 129, 0.632);
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+}
+
+.music-player .icons {
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    width: 17rem;
+
+    position: absolute;
+    right: 3rem;
+    bottom: 1.5rem;
+    align-items: center;
+}
+
+.music-player .icons img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.4;
+}
+
+.icons .speaker {
+    display: flex;
+    align-items: center;
+}
+
+.icons .speaker .volume {
+    width: 5rem;
+    height: 0.2rem;
+}
+
+.icons .full {
+    margin-left: 1rem;
+}
+.music-player img:hover{
+    cursor:no-drop;
+}

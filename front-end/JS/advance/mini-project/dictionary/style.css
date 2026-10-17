@@ -1,0 +1,57 @@
+body{
+    margin: 0%;
+}
+.heading{
+    background-color:antiquewhite;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.word-container{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    /* border: 2px black solid; */
+    padding: 1rem;
+    width: 500px;
+    height: 400px;
+}
+.words{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.words #text{
+    outline: none;
+    border: none; 
+    font-size: 30px;
+    border-bottom: 1px black solid;
+}
+.words i{
+    font-size: 20px;
+}
+.words i:hover{
+    cursor: pointer;
+}
+.data{
+    height: 300px;
+    border: 2px solid black;
+    margin-top: 2rem;
+
+}
+.data .definition{
+    font-size: 1.5rem;
+}
+
+/* added in js */
+.title{
+    color: red;
+    background-color: antiquewhite;
+}
+
+.ex {
+    margin-top: 0.5rem;
+}

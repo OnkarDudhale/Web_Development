@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <form method="post" action="/books">
+        <div class="bookInfo">Select an image : <input type="file" name="img" id="img" placeholder="Book Image">
+
+        <div class="bookInfo"><input type="text" name="title" id="title" placeholder="Book Title" required></div>
+
+        <div class="bookInfo"><textarea cols="30" rows="5" name="desc" id="desc" placeholder="Book Description" required></textarea></div>
+
+        <div class="bookInfo"><textarea cols="40" rows="20" name="content" id="content" placeholder="Book Content" required></textarea></div>
+
+        <div class="bookInfo"> <input type="text" name="author" id="author" placeholder="Book Author" required></div>
+
+        <div class="bookInfo"><button type="submit">Add Book</button></div>
+    </form>
+
+</body>
+
+</html>

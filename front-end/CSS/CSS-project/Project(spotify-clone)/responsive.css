@@ -1,0 +1,105 @@
+@media (max-width: 700px) {
+    
+    .device-bar{
+        display: block;
+        height: 2rem;
+    }
+    .device-bar i{
+        font-size: 2rem;
+        opacity: 0.8;
+        display: block;
+    }
+    .top {
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .icons img,.speaker .volume{
+        display: none;
+    }
+    .copyright{
+        display: none;
+    }
+    .main-content{
+        overflow-y: auto;
+        
+    }
+    
+    .main-card{
+        height: 35rem;
+    }
+    .cards{
+        width:100% ;
+        flex-wrap: wrap;
+    }
+    .card {
+        height: 15.5rem;
+        width: 47%;
+        
+    }
+    .card-start img{
+        width:98%;
+    }
+    .player .track {
+        width: 300px;
+        height: 4px;
+        background-color: rgba(129, 129, 129, 0.632);
+        border-radius: 1rem;
+        margin-top: 0.5rem;
+    }  
+}
+@media (min-width: 701px) and (max-width:1050px) {
+    .block{
+        width: 30rem;
+        height: 30rem;
+    }
+    .device-bar{
+        display: block;
+        height: 4rem;
+    }
+    .device-bar i{
+        font-size: 4rem;
+        opacity: 0.8;
+        display: block;
+    }
+    
+    .top {
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .icons img,.speaker .volume{
+        display: none;
+    }
+
+    .main-content{
+        overflow-y: auto;
+    }
+    .main-card{
+        height: 60rem;
+    }
+    .cards{
+        width:100% ;
+        flex-wrap: wrap;
+    }
+    .card {
+        height: 25rem;
+        width: 47%;
+        
+    }
+    .card-start{
+        height: 22rem;
+    }
+    .card-start img{
+        width:98%;
+        height: 100%;
+    }  
+}

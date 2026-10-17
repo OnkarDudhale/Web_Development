@@ -1,0 +1,46 @@
+#mainBlock{
+    height: 500px;
+    width: 200px;
+    background-color: antiquewhite;
+    border:2px black solid;
+}
+.block{
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 40px;
+    border: 2px black solid;
+}    
+#red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+#green{
+    background-color: green;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px black solid;
+    padding: 20px;
+    margin: 20px;
+}
+.smallBox{
+    height: 55px;
+    width: 55px;
+    border: 2px black solid;
+    padding: 20px;
+    background-color: aqua;
+}
+.smallestBox{
+    height: 35px;
+    width: 35px;
+    border: 2px black solid;
+    /* padding: 12px; */
+    margin: 8px;
+    background-color: aquamarine;
+}

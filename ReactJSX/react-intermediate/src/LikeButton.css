@@ -1,0 +1,30 @@
+.block {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.like {
+    font-size: 1.5rem;
+    height: 0.5rem;
+}
+
+
+.like .fa-solid {
+    color: red;
+}
+
+.like .fa-regular {
+    color: red;
+}
+
+
+.like:hover {
+    cursor: pointer;
+}
+
+
+/* count like */
+.countLike {
+    color: black;
+}

@@ -1,0 +1,124 @@
+#container1{
+    width: 500px;
+    height: 300px;
+    border: 2px black solid;
+    margin: 10px auto;
+    display: flex;
+    justify-content:space-between;
+    /* flex-direction: row; */
+    /* along with main axis */
+    /* justify-content: flex-start; */
+    /* along with cross axis */
+    /* align-items: center;  */
+    /* flex-direction: column-reverse;
+    flex-wrap: wrap-reverse; */
+}
+
+#container2{ 
+    width:500px;
+    height: 300px;
+    border: 2px black solid;
+    margin: 10px auto;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+#container3{
+    width:500px;
+    height: 300px;
+    border: 2px black solid;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content:space-between;
+    /* flex-wrap: wrap; */
+    align-content: space-between;
+}
+
+#container3 .green{
+    align-self:flex-end;
+}
+.red{
+    background-color: red;
+    height: 80px;
+    /* width: 80px; */
+    width: 200px;
+    color: white;
+}
+.yellow{
+    background-color: yellow;
+    height: 80px;
+    /* width: 80px; */
+    width: 200px;
+    color: white;
+}
+.orange{
+    background-color: orange;
+    height: 80px;
+    /* width: 80px; */
+    width: 200px;
+    color: white;
+}
+.green{
+    background-color: green;
+    height: 80px;
+    /* width: 80px; */
+    width: 200px;
+    color: white;
+}
+.pink{
+    background-color: pink;
+    height: 80px;
+    /* width: 80px; */
+    width: 200px;
+    color: white;
+}
+
+#container{
+    width:500px;
+    height: 300px;
+    border: 2px black solid;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+}
+.r{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    color: white;
+    /* flex-basis: 300px;*/
+} 
+.y{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    color: white;
+    flex-grow: 1;
+}
+.g{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    color: white;
+    flex-grow: 2;
+    /* max-width: 200px; */
+    /* min-width: 100px; */
+}
+.p{
+    height: 50px;
+    width: 50px;
+    /* width: 300px;
+    flex-shrink: 1; */
+    background-color: pink;
+    color: white;
+}
+.o{
+    height: 50px;
+    width: 50px;
+    /* width: 300px;
+    flex-shrink: 2; */
+    background-color: orange;
+    color: white;
+}

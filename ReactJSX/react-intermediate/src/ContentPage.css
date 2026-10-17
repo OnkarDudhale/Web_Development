@@ -1,0 +1,14 @@
+.page {
+    position: relative;
+    height: 15rem;
+    width: 10rem;
+    border: 2px rgb(102, 255, 0) solid;
+    background-color: rgb(209, 230, 248);
+    border-radius: 10px;
+}
+
+.page:hover {
+    cursor: pointer;
+    border: 3px yellow solid;
+    transition: 2s 1s ease-in-out;
+}

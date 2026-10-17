@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="books">
+        <%for(book of books){%>
+            <div class="book">
+                <h3>
+                    <%=book.title%>
+                </h3>
+                <div class="action">
+                    <a href="http://localhost:3000/books/<%=book.id%>/editPage">edit page</a>
+                    <form action="http://localhost:3000/books/<%=book.id%>?_method=DELETE" method="post">
+                        <button type="submit">Delete book</button>
+                   </form>
+                </div>
+            </div>
+            <%}%>
+                <div class="newBook">
+                    <a href="http://localhost:3000/admin/book"><button>add new book</button></a>
+                </div>
+    </div>
+</body>
+
+</html>

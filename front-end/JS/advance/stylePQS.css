@@ -1,0 +1,29 @@
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.border{
+    border: 2px black solid;
+}
+
+.bg{
+    background-color:pink;
+}
+
+
+
+/* btn */
+
+
+.btn_bg_text{
+    background-color: blue;
+    color: white;
+}
+.underlinedColor{
+    text-decoration: underline;
+    color: purple;
+}

@@ -1,0 +1,17 @@
+<%- include('includes/head.ejs');%>
+<body>
+    <h4>
+        @<%= username %>
+    </h4>
+    <button>follow</button>
+    <button>meassage</button>
+    <h3>Accounts that follow <i>
+        <%= username%>
+        </i> : </h3>
+        <% for(let follow of followers){%>
+            <li>
+                <%=follow%>
+            </li>
+        <% } %>
+</body>
+</html>

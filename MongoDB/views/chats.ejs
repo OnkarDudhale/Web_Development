@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Chats</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>All Chats</h2>
+    <form method="GET" action="/chats/new">
+        <button>new Chat</button>
+    </form>
+</br>
+    <div id="chats">
+    <% for(chat of chats) {%>
+        <div id="chat">
+            <div class="from"><b>From :</b> <%=chat.from%></div>
+            <div class="msg">
+                <div class="msgDiv">
+                    <%=chat.msg%>
+                </div>
+                <div class="chatAction">
+                    <div class="editMsg">
+                        <a href='/chats/<%=chat._id%>/chatEdit'><button>edit</button></a>
+                    </div>
+                    <form method="post" action="/chats/<%=chat._id%>?_method=DELETE">
+                        <div class="delete">
+                            <button type="submit" id="del">x</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="to"><b>Received by :</b> <%=chat.to%></div>
+            <div class="extraInfo">
+                <p class="time"><b><%=chat.created_at.toString().split(" ")[4]%></b></p>
+                <p class="date"><b><%=chat.created_at.toString().split(" ").slice(0,4).join(" ")%></b></p>
+            </div>
+        </div>
+    <% } %>
+    </div>
+    <script src="/public/delete.js"></script>
+</body>
+</html>

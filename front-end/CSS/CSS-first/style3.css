@@ -1,0 +1,42 @@
+.course{
+    display: flex;
+    gap: 10rem;
+}
+.check{
+    display:inline-block;
+}
+input:hover{
+   background-color:pink;
+   color: red;
+}
+input:active{
+    background-color: green;
+}
+button:active{
+    color: darkgreen;
+    background-color:aqua;
+}
+input[type="radio"]:checked + label{
+    color: blue;
+    font-weight: bold;
+}
+.head:nth-of-type(2){
+   background-color: floralwhite;
+}
+p{
+    color: green;
+}
+p:first-letter{
+   color: red; 
+}
+p::first-line{
+    background-color: pink;
+}
+p::selection{
+    color:aliceblue;
+}
+/* .stream:nth-of-type(2){
+   background-color: floralwhite;
+} */
+
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>user email:<%=user.email%></h2>
+    <form method="post" action="/users/<%=user.id%>?_method=PATCH">
+        <div class="userInfo">
+            <h4>Change Username</h4>
+            <input type="text" name="username" id="user" placeholder="<%=user.username%>" required>
+            <input type="password" name="password" id="password" placeholder="enter password" required>
+            <button type="submit">change</button>
+        </div>
+    </form>
+</body>
+</html>

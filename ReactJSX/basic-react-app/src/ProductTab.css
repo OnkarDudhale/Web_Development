@@ -1,0 +1,6 @@
+.productTab{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px white solid;
+}

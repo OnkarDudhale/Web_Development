@@ -1,0 +1,21 @@
+/* .Product{
+    border: 1px solid white;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 1.5rem;
+} */
+
+.product{
+    position: relative;
+    height: 15rem;
+    margin: 0.5rem;
+    border: 1px rgb(0, 255, 136) solid;
+    border-radius: 1rem;
+    width: 17rem;
+}
+.title:hover{
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 2rem;
+    transition: 2s ease-in;
+}

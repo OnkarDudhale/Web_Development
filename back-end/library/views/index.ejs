@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Welcome to library</h1>
+    <h2>Books</h2>
+    <div id="container">
+        <% for(book of books){ %>
+            <div id="block">
+                <div class="image">
+                    <img src="<%=book.img%>" alt="book image">
+                </div>
+                <div class="data">
+                    <h3>
+                        <%=book.title%>
+                    </h3>
+                    <p>
+                        <%=book.desc%>
+                    </p>
+                    <p>
+                        <%=book.author%>
+                    </p>
+                </div>
+
+                <a href="http://localhost:3000/books/<%=book.id%>/page"><button>Read</button></a>
+            </div>
+            <% } %>
+    </div>
+</body>
+
+</html>
